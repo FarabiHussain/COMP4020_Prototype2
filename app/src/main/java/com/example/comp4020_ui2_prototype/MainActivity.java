@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initViews(); // initialises all view elements
+    }
+
+    private void initViews() {
         accountsButton = findViewById(R.id.accountsButton);
         rewardsButton = findViewById(R.id.rewardsButton);
         savingsButton = findViewById(R.id.savingButton);
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         profileButton = findViewById(R.id.profileButton);
         calendarButton = findViewById(R.id.calendarButton);
 
-        setListeners();
+        setListeners(); // sets listeners to each view element for navigation between pages
     }
 
     private void setListeners() {
