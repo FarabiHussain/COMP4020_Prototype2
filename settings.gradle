@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "COMP4020-UI2-Prototype"
